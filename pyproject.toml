@@ -1,0 +1,13 @@
+[project]
+name = "aoi-drawer"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "matplotlib>=3.10.3",
+    "numpy>=2.3.2",
+    "opencv-python>=4.11.0.86",
+    "subprocess-run>=0.0.8",
+    "tk-tools>=0.17.0",
+]
