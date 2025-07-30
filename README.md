@@ -1,42 +1,45 @@
- AOI_Drawer - Polygon Tool GUI
+AOI-Drawer - Polygon Tool GUI
 ==============================
 
-DESCRIPTION
+Description
 -----------
-AOI_Drawer is a simple Python-based graphical tool that allows users to manually define polygonal Areas of Interest (AOIs) on top of a background image. It is useful for tasks such as satellite imagery labeling, area annotation, or geographic region definition.
+AOI-Drawer is a simple Python-based graphical tool that allows users to manually define polygonal Areas of Interest (AOIs) on top of a background image. This is specially useful to then extract the shapefiles of the AOI to be analyzed.
 
 The project includes:
 - AOI_Drawer.py  : Main class to interactively draw and fill polygons using OpenCV
 - main.py        : Entry-point script to launch the tool with a user-defined image
 
 
-REQUIREMENTS
+Prerequisites
 ------------
 - Python 3.6+
 - OpenCV (cv2)
 - NumPy
 
 Install dependencies via pip:
+    '''
     pip install opencv-python numpy
+    '''
 
-
-USAGE INSTRUCTIONS
+Usage Instructions
 ------------------
 1. Place your target background image (e.g. a satellite image) in:
-   /home/cesccgasso/Python-Projects/Tools/AOI_Drawer/Images/
+   /AOI_Drawer/Images/
 
-2. Open and edit `main.py` to set the desired image name:
-       image_name = "your_image.png"
-
-3. Run the script:
-       python main.py
+2. Run the script:
+   ```
+   python3 main.py
+   ```
+3. Follow the console prompt to select the image:
+   - The script will list all available images.
+   - Enter the number corresponding to the desired image.
 
 4. Use the following controls:
 
    - Left Click     : Add polygon vertex
    - 'z'            : Undo last point
    - 'r'            : Reset image
-   - 's'            : Save annotated image as 'annotated_output.png'
+   - 'Ctrl' + 's'   : Save image 
    - 'q'            : Quit the application
 
    Tip: To complete the polygon, click near the starting point.
@@ -45,14 +48,6 @@ USAGE INSTRUCTIONS
 
 NOTES
 -----
-- Saved images are written to the same folder as the script.
+- Saved images can be written anywhere.
 - Polygons are drawn with semi-transparent overlay for better visibility.
-- Only one polygon can be drawn at a time (current version). Press 'r' to start a new one.
-
-LICENSE
--------
-This project is distributed for educational and research purposes only.
-
-AUTHOR
-------
-Cesc Casanovas Gassó
+- Several polygons can be drawn at a time (current version). Press 'r' to start a new one.
