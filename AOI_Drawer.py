@@ -1,14 +1,3 @@
-"""
-Simple Polygon Overlay Tool
-Usage: python3 polygon_overlay.py <image_path>
-
-Instructions:
-- Left click to add polygon points
-- Press 'r' to reset
-- Press 'q' to quit
-- Press 'z' to undo last point
-"""
-
 import cv2
 import numpy as np
 

@@ -5,6 +5,7 @@
 
 Polygon Tool Instructions:
 - Left click to add polygon points
+- Press 'Ctrl' + 's' to save the image
 - Press 'r' to reset
 - Press 'q' to quit
 - Press 'z' to undo last point
@@ -15,7 +16,19 @@ import os
 import sys
 
 # 1. Insert the Image Name which you want to use as a background for the AOI boundary
-image_name = "Barcelona.png"
+i = 0
+print("Welcome to AOI Drawer!")
+print("Images available to use:")
+for file in os.listdir("Images"):
+    i+=1
+    if file.endswith(('.png', '.jpg', '.jpeg')):
+        print(f'({i}) '+file)
+try:
+    image_name = os.listdir("Images")[int(input("Enter image number: "))-1]
+except (ValueError, IndexError):
+    print("Invalid input. Please enter a valid number.")
+    sys.exit(1)
+
 
 # 2. Run the main.py script and follow the instructions in the console.
 
