@@ -34,20 +34,24 @@ Usage Instructions
    - The script will list all available images.
    - Enter the number corresponding to the desired image.
 
-4. Use the following controls:
+4. You will see the following GUI.Use the following controls:
 
    - Left Click     : Add polygon vertex
    - 'z'            : Undo last point
    - 'r'            : Reset image
    - 'Ctrl' + 's'   : Save image 
-   - 'q'            : Quit the application
+   - 'q'            : Quit the application  
+  ![GUI of the AOI Drawer](GitImages/DrawingAOI.png)  
+   
+   Tip: To complete the polygon, click near the starting point, and then save it as a ".png" file.  
+  ![Save the AOI as a .png](GitImages/SavingAOI.png)  
 
-   Tip: To complete the polygon, click near the starting point.
+   
 
-5. After completion, the filled polygon will be blended into the image with 50% opacity.
+6. After completion, the filled polygon will be blended into the image with 70% opacity.
 
 NOTES
 -----
-- Saved images can be written anywhere.
+- Saved images can be written anywhere, but it must be saved as a ".png" file.
 - Polygons are drawn with semi-transparent overlay for better visibility.
 - Several polygons can be drawn at a time (current version). Press 'r' to start a new one.
