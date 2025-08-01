@@ -9,8 +9,8 @@ class PolygonTool:
         
         self.image = self.original.copy()
         self.points = []
-        self.opacity = 0.5  # 50% opacity
-        self.color = (255, 170, 0)  # Blue color (BGR format)
+        self.opacity = 0.7  # 50% opacity
+        self.color = (255, 100, 0)  # Blue color (BGR format)
         
         # Create window
         cv2.namedWindow('Polygon Tool', cv2.WINDOW_AUTOSIZE)
